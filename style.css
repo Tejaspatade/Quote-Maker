@@ -1,0 +1,176 @@
+/* 
+font-size:
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+font-weight:
+
+line-height:
+1.8
+
+---Spacing
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+ */
+
+/* Rubik Font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Background Pattern
+  src:https://heropatterns.com/ */
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2374c0fc' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  font-family: Rubik, sans-serif;
+  text-align: center;
+}
+
+.container {
+  margin: 50vh auto;
+  padding: 2.4rem 4.8rem;
+
+  width: auto;
+  max-width: 90rem;
+
+  border-radius: 9px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
+  /* Centering the Offset */
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+/* Quote Text */
+.quote-text {
+  font-size: 5.2rem;
+}
+
+.fa-quote-left {
+  color: #1c7ed6;
+}
+
+.quote {
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* JS Class for longer Quotes */
+.long-quote {
+  font-size: 3rem;
+}
+
+/* Author */
+.author-container {
+  margin-bottom: 1.6rem;
+}
+
+.author {
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 1.2rem 1.6rem;
+
+  font-size: 1.8rem;
+
+  color: #ffffff;
+  background-color: #333;
+}
+
+.btn-tweet {
+  padding: 1.6rem;
+
+  background-color: #1da1f2;
+  color: #ffffff;
+
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
+  transition: all 0.2s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-tweet:hover {
+  color: #1da1f2;
+  background-color: #ffffff;
+}
+
+/* Twitter Icon */
+.fa-twitter {
+  font-size: 2.4rem;
+}
+
+.btn-next {
+  font-size: 2rem;
+
+  border-radius: 9px;
+  box-shadow: 0 0.5rem rgba(121, 121, 121, 0.65);
+
+  transition: all 0.1s;
+}
+
+.btn-next:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+/* Loader Stylings */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+
+  margin: 40vh auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1000px) {
+  .container {
+    margin: 50vh 4.8rem;
+  }
+
+  .quote {
+    line-height: 0;
+  }
+}

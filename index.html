@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://www.google.com/s2/favicons?domain=css-tricks.com"
+      type="image/png"
+    />
+
+    <!-- Title -->
+    <title>Quote Maker</title>
+  </head>
+  <body>
+    <!-- Quote Box Container -->
+    <div class="container" id="container">
+      <!-- Quote -->
+      <div class="quote-text">
+        <i class="fas fa-quote-left"></i>
+        <span class="quote" id="quote"></span>
+      </div>
+
+      <!-- Author -->
+      <div class="author-container">
+        <span class="author">&mdash;</span>
+        <span class="author" id="author"></span>
+      </div>
+
+      <!-- Buttons -->
+      <div class="button-container">
+        <button class="btn btn-tweet" title="Tweet This Now!" id="btn-tweet">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button class="btn btn-next" id="btn-next" title="New Quote">
+          Another Quote
+        </button>
+      </div>
+    </div>
+
+    <!-- Loading Animation -->
+    <div class="loader" id="loader"></div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
