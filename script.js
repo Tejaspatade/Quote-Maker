@@ -69,5 +69,4 @@ function tweetQuote() {
 btnTweetQuote.addEventListener("click", tweetQuote);
 btnNextQuote.addEventListener("click", newQuote);
 
-// getQuotes();
-loading();
+getQuotes();
