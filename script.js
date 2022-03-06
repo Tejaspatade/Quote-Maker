@@ -11,11 +11,13 @@ let apiQuotes = [];
 function loading() {
   loader.hidden = false;
   quoteContainer.hidden = true;
+  btnNextQuote.hidden = true;
 }
 
 function doneLoading() {
   loader.hidden = true;
   quoteContainer.hidden = false;
+  btnNextQuote.hidden = false;
 }
 
 // Dislpay new Quote
@@ -67,4 +69,5 @@ function tweetQuote() {
 btnTweetQuote.addEventListener("click", tweetQuote);
 btnNextQuote.addEventListener("click", newQuote);
 
-getQuotes();
+// getQuotes();
+loading();
