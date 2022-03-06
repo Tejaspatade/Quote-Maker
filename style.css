@@ -55,7 +55,7 @@ body {
   /* Centering the Offset */
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   row-gap: 3.2rem;
 }
 
@@ -88,6 +88,7 @@ body {
   text-align: end;
 
   grid-column: 2 / 3;
+  align-self: center;
 }
 
 .author {
@@ -186,11 +187,32 @@ body {
 
 /* Media Queries */
 @media (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+
   .container {
     margin: 50vh 4.8rem;
+
+    row-gap: 2.4rem;
   }
 
   .quote {
     line-height: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 1.6rem 3.2rem;
+    margin: 50vh 2.4rem;
+  }
+
+  .author-container {
+    margin-bottom: 0;
+  }
+
+  .button-container {
+    justify-content: center;
   }
 }
